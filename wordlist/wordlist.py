@@ -1,6 +1,6 @@
 from random import randint
 
-class Dictionary(object):
+class Wordlist(object):
     def __init__(self, file_name):
         self.file_name = file_name
         self.words = []

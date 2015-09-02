@@ -1,6 +1,6 @@
 #!/bin/env python
-from dictionary.dictionary import Dictionary
-from syllable import syllable
+from names.names import Names
+
 import sys
 """ Idea for name generator:
         1.  Pick three words from the dictionary
@@ -13,19 +13,8 @@ import sys
 
 
 count = 0
-dictionary = Dictionary('data/words')
+names = Names()
+
 while count < 10:
-    first_word = dictionary.get_word()
-    second_word = dictionary.get_word()
-    third_word = dictionary.get_word()
-
-    first_syllable = syllable.word_to_list(first_word)
-    second_syllable = syllable.word_to_list(second_word)
-    third_syllable = syllable.word_to_list(third_word)
-    first_name = '{0}{1}'.format(second_syllable[0],
-                                 first_syllable[0]).capitalize()
-    second_name = '{0}{1}'.format(third_syllable[0],
-                                  second_syllable[1]).capitalize()
-    print '{0} {1}'.format(first_name, second_name)
-    count = count +1
-
+    print names.generate_name()
+    count = count + 1
