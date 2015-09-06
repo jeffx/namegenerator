@@ -15,6 +15,7 @@ import sys
 count = 0
 names = Names()
 
-while count < 10:
+#while count < 100000:
+while True:
     print names.generate_name()
     count = count + 1

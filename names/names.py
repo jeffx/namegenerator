@@ -17,6 +17,10 @@ class Names(Wordlist):
         third_syllable = syllable.word_to_list(self.third_word)
         first_name = '{0}{1}'.format(second_syllable[0],
                                      first_syllable[0]).capitalize()
-        second_name = '{0}{1}'.format(third_syllable[0],
-                                      second_syllable[1]).capitalize()
+        if len(second_syllable) <= 2:
+            second_name = '{0}{1}'.format(third_syllable[0],
+                                          first_syllable[0])
+        else:
+            second_name = '{0}{1}'.format(third_syllable[0],
+                                          second_syllable[1]).capitalize()
         return '{0} {1}'.format(first_name, second_name)
