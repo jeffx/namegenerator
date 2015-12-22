@@ -35,3 +35,22 @@ class Wordlist(object):
                 raise 'foobar'
         else:
             return self.words[randint(0, len(self.words) - 1)]
+
+    def word_to_syllable(self, word):
+        syllable_list = []
+        vowel_flag = False
+        syllable = []
+        for letter in word:
+            if re.match('a|e|i|o|u', letter):
+                if vowel_flag:
+                    syllable_list.append(''.join(syllable))
+                    syllable = []
+                    syllable.append(letter)
+                    vowel_flag = True
+                else:
+                    syllable.append(letter)
+                    vowel_flag = True
+            else:
+                syllable.append(letter)
+        syllable_list.append(''.join(syllable))
+        return syllable_list

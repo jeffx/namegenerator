@@ -23,26 +23,23 @@ requirements = get_requirements('requirements.txt')
 test_requirements = get_requirements('testing_requirements.txt')
 
 setup(
-    name='funnel_fodder',
+    name='namegenerator',
     version='0.1.0',
-    description="A 0-level character generator for DCC RPG",
+    description="A name generation program",
     long_description=readme + '\n\n' + changelog,
     author="Jeffery Tillotson",
     author_email='jpt@jeffx.com',
     url='https://github.com/jeffx/namegenerator',
     packages=[
         'names',
-        'syllable'
     ],
-    package_dir={'names': 'names',
-                 'syllable': 'syllable',
-                },
+    package_dir={'names': 'names'},
     package_data={'': ['data/words.dat']},
     include_package_data=True,
     install_requires=requirements,
     license="GPLv3",
     zip_safe=False,
-    keywords='funnel_fodder',
+    keywords='namegenerator',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',
