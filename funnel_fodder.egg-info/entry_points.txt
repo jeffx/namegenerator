@@ -1,0 +1,3 @@
+[console_scripts]
+namegen = names.cli:cli
+

@@ -3,7 +3,7 @@ from syllable import syllable
 
 
 class Names(Wordlist):
-    default_wordlist = 'data/words'
+    default_wordlist = '/home/jeffx/Projects/namegenerator/data/words.dat'
 
     def __init__(self, word_file=None):
         super(Names, self).__init__(self.default_wordlist)

@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: funnel-fodder
+Version: 0.1.0
+Summary: A 0-level character generator for DCC RPG
+Home-page: https://github.com/jeffx/namegenerator
+Author: Jeffery Tillotson
+Author-email: jpt@jeffx.com
+License: GPLv3
+Description: Rough proof of concept at the moment.  
+        
+        data/words is modified /usr/share/dict/words from Fedora
+        
+        
+Keywords: funnel_fodder
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.4
