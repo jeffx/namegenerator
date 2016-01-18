@@ -24,7 +24,7 @@ test_requirements = get_requirements('testing_requirements.txt')
 
 setup(
     name='namegenerator',
-    version='0.1.0',
+    version='0.1.2',
     description="A name generation program",
     long_description=readme + '\n\n' + changelog,
     author="Jeffery Tillotson",
@@ -32,6 +32,7 @@ setup(
     url='https://github.com/jeffx/namegenerator',
     packages=[
         'names',
+        'wordlist'
     ],
     package_dir={'names': 'names'},
     package_data={'': ['data/words.dat']},

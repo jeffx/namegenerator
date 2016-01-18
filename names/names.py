@@ -1,8 +1,10 @@
 from wordlist.wordlist import Wordlist
+import pkg_resources
 
 
 class Names(Wordlist):
-    default_wordlist = '/home/jeffx/Projects/namegenerator/data/words.dat'
+    default_wordlist = pkg_resources.resource_filename(__name__,
+                                                       'data/words.dat')
 
     def __init__(self, word_file=None):
         super(Names, self).__init__(self.default_wordlist)
